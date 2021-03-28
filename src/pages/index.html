@@ -17,8 +17,8 @@
       content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
     />
 
-    <!-- uncomment the line below to enable PWA  -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
+    <!--o uncomment the line below to enable PWA  -->
+    <!-- <link rel="manifest" href="manifest.jsn" /> -->
 
     <link
       rel="apple-touch-icon"
@@ -145,9 +145,93 @@
     />
   </head>
   <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+    <header class="top">
+      <nav class="navigator">
+        <a class="navigator__link" href="index.html">Home</a>
+        <a class="navigator__link" href="index.html">Home</a>
+        <a class="navigator__link" href="another.html">Front-end</a>
+        <a class="navigator__link" href="another.html">Front-end</a>
+        <a class="navigator__link" href="another.html">Front-end</a>
+      </nav>
+      <button class="hamburger hamburger-js">🍔</button>
+    </header>
+
+    <main>
+      <header class="header">
+        <h1 class="header__tittle">Test project</h1>
+      </header>
+
+      <section>
+        <form onsubmit="return calculate()">
+          <input id="input-x" type="text" />
+          <input id="input-y" type="text" />
+          <input class="submit" type="submit"/>
+        </form>
+      </section>
+
+      <section class="hello">
+        <h2 class="hello__tittle hello__tittle--js">Cześć</h2>
+        <p class="hello__paragraph">
+          Jestem Mateusz i moim marzeniem jest zostać programista. Ta strona to
+          taki brudnopis, w którym bede testował programistyczne zagadnienia z
+          kursu “WTF co ten frontend”. Mam nadzieję, że przy pomocy Maćka
+          Korsana (mentora WTF) uda mi się spełnić moje marzenie. Życzcie mi
+          powodzenia!
+        </p>
+      </section>
+
+      <img class="img" src="../assets/img/code.jpg" alt="kod programowania na ekrania monitora" />
+
+      <section class="notes">
+        <h2 class="notes__tittle">Brudnopis</h2>
+
+        <article class="article">
+          <h4 class="article__tittle">JavaScript</h4>
+          <p class="article__paragraph">
+            Skryptowy język programowania, stworzony przez firmę Netscape,
+            najczęściej stosowany na stronach internetowych. Twórcą JavaScriptu
+            jest Brendan Eich. W połowie lat 90. XX wieku
+            organizacja ECMA wydała na podstawie JavaScriptu standard języka
+            skryptowego o nazwie ECMAScript, aktualnie rozwijaniem tego
+            standardu zajmuje się komisja TC39.
+          </p>
+        </article>
+
+        <article class="article">
+          <h4 class="article__tittle">JavaScript Zastosowanie</h4>
+          <p class="article__paragraph">
+            Najczęściej spotykanym zastosowaniem języka JavaScript są strony
+            internetowe. Skrypty te służą najczęściej do zapewnienia interakcji
+            poprzez reagowanie na zdarzenia, walidacji danych wprowadzanych w
+            formularzach lub tworzenia złożonych efektów wizualnych. Skrypty
+            JavaScriptu uruchamiane przez strony internetowe mają znacznie
+            ograniczony dostęp do komputera użytkownika. Po stronie serwera
+            JavaScript może działać w postaci node.js lub Ringo.
+          </p>
+        </article>
+
+        <article class="article">
+          <h4 class="article__tittle">JavaScript Myśl jak programista</h4>
+          <p class="article__paragraph">
+            Program to nic innego jak zapisany ciąg zdarzeń, występujący po sobie. W taki sposób robimy wiele czynności kazdego dnia. Programista w swojej pracy myśli blokowo. Ponizej zapisałem robienie kawy w sposób blokowy. Mam nadzieję, ze kiedys pisanie programów będzie dla nas tak łatwe jak robienie kawy 😉
+            <ul class="article__list">
+              <li>Przygotuj: czajnik z wodą, kubek, łyżeczkę, kawę,
+                cukier, mleko.</li>
+             <li>zagotuj wodę</li>
+             <li>wsyp do kubka, dwie łyżeczki kawy i dwie łyżeczki cukru</li>
+             <li>po zagotowaniu wody wlej ¾ wody do kubka</li>
+             <li>zamiejszaj kawę w kubku łyżeczką 4. dolej mleko do kubka</li> 
+             <li>rozkoszuj się kawą</li>
+            </ul>
+          </p>
+        </article>
+
+        <article class="article article--js"></article>
+      </section>
+
+      <footer class="footer">
+        <p class="footer__paragraph">To jest stopka</p>
+      </footer>
+    </main>
   </body>
 </html>
