@@ -1,4 +1,7 @@
+
 @import "~normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Lato&display=swap');
+
 
 @import "_variables";
 @import "modules/hello.scss";
@@ -11,7 +14,9 @@ html {
 
 body {
   background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-  min-height: 100vh; }
+  min-height: 100vh;
+  font-family: 'Lato', sans-serif;
+} 
 
 main {
   max-width: 1000px;
@@ -33,16 +38,23 @@ main {
   display: flex;
   justify-content: space-evenly;
   background-color: #ffcc00;
-  padding: 16px; }
-  .navigator__link {
+  padding: 16px; 
+  &__link {
     text-decoration: none;
     color: #000; }
+  }
 
 .header {
-  margin-top: 62px; }
-  .header__tittle {
+  margin-top: 62px;
+  display: flex;
+  justify-content: space-between;
+  &__tittle {
     color: #2e3233;
     height: 60px; }
+  &__data {
+
+  }
+  }
 
 .hamburger {
   display: none; }
@@ -56,19 +68,22 @@ main {
 .frontend__tittle {
   color: #177e89; }
 
-.article__list {
-  list-style-type: decimal; }
 
-.article__tittle {
-  color: #db3a34; }
-  .article__tittle::before {
+.article{
+  &__list {
+  list-style-type: decimal; }
+  &__tittle {
+  color: #db3a34; 
+    &::before {
     content: "🧑🏼‍💻";
     margin-right: 4px; }
-  .article__tittle::after {
+    &::after {
     content: "👊🏻";
     margin-left: 4px; }
+  }
+  }
 
-@media (max-width: 736px) {
+@media (max-width: 768px) {
   .top {
     display: block;
     background-color: #ffcc00;
@@ -94,6 +109,6 @@ main {
     color: #084c61;
     margin-top: 0;
     padding: 16px 0px;
-    margin-top: 52px; }
+    margin-top: 32px; }
   .header--space__js {
-    margin-top: 196px; } }
+    margin-top: 208px; } }

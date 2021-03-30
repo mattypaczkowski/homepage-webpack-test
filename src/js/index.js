@@ -1,3 +1,4 @@
+import moment from 'moment';
 import '../scss/main.scss';
 
 // uncomment the lines below to enable PWA
@@ -67,3 +68,10 @@ hamburger.addEventListener('click', () => {
   const space = document.querySelector('.header')
   space.classList.toggle('header--space__js')
 })
+
+const time =  moment().format('MMMM Do YYYY');
+const data = document.querySelector('.data--js');
+data.innerHTML = time;
+
+
+console.log(time);
